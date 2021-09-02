@@ -372,7 +372,7 @@
 
 .review-card {
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   background: $dark-1;
   border-radius: 1rem;
 
@@ -391,6 +391,7 @@
 .review-card-title {
   text-transform: capitalize;
   font-size: 1.2rem;
+  margin-block-end: .5rem;
 
   @media screen and (min-width: $tablet-sm) {
     font-size: 1.4rem;
@@ -410,6 +411,8 @@
 .review-card-body {
   margin-block-start: 1rem;
   color: $grey;
+  font-size: 1.1rem;
+  line-height: 160%;
 
   @media screen and (min-width: $tablet-sm) {
     font-size: 1.2rem;
