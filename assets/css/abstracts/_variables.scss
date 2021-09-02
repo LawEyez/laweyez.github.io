@@ -1,0 +1,42 @@
+// LENGTHS
+$header-height: 8rem;
+$header-height-sm: 6rem;
+$navbar-width: 7rem;
+$gutter: 4rem;
+$left-offset: $navbar-width + 2 * $gutter;
+
+$featured-height: 30rem;
+
+// FONTS
+$base-font: 'Poppins', sans-serif;
+$base-font-alt: 'Oswald', sans-serif;
+
+// COLORS
+$light: #fff;
+
+$primary-color: #ee4e4e;
+$primary-color-alt: #eb6868;
+
+$grey-light: #eee;
+$grey: #bcbcbc;
+$grey-dark: #333;
+
+$dark-1: #161616;
+$dark-2: #111111;
+$dark-3: #0d0d0d;
+
+// SCREENS
+$mobile-xsm: 280px;
+$mobile-sm: 320px;
+$mobile-md: 400px;
+$mobile-lg: 500px;
+
+$tablet-sm: 640px;
+$tablet-md: 800px;
+$tablet-lg: 960px;
+$tablet-xlg: 1024px;
+
+$laptop-sm: 1280px;
+$laptop-md: 1366px;
+$laptop-lg: 1440px;
+$laptop-xlg: 1920px;

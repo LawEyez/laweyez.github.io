@@ -1,0 +1,90 @@
+// COLORS
+.light {
+  color: $light;
+}
+
+.grey-light {
+  color: $grey-light;
+}
+
+.grey {
+  color: $grey;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.primary-alt {
+  color: $primary-color-alt;
+}
+
+// FONT WEIGHT
+.fw-300 {
+  font-weight: 300;
+}
+
+// FLEX
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+// MARGIN
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+
+// TEXT TRANSFORM
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.base-font-alt {
+  font-family: $base-font-alt;
+}
+
+
+
+

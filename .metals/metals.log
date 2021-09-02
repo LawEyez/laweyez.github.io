@@ -1,0 +1,24 @@
+[0m2021.08.26 10:33:17 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.0.[0m
+[0m2021.08.26 10:33:25 INFO  time: initialize in 8.6s[0m
+[0m2021.08.26 10:33:37 WARN  Build server is not auto-connectable.[0m
+[0m2021.08.26 10:33:37 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.08.28 09:16:21 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.0.[0m
+[0m2021.08.28 09:16:22 INFO  time: initialize in 1.58s[0m
+[0m2021.08.28 09:16:27 WARN  Build server is not auto-connectable.[0m
+[0m2021.08.28 09:16:27 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.08.30 13:05:36 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.0.[0m
+[0m2021.08.30 13:05:40 INFO  time: initialize in 4.36s[0m
+[0m2021.08.30 13:05:52 WARN  Build server is not auto-connectable.[0m
+[0m2021.08.30 13:05:52 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.01 11:50:53 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.1.[0m
+[0m2021.09.01 11:50:55 INFO  time: initialize in 2.62s[0m
+[0m2021.09.01 11:51:02 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.01 11:51:02 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.01 13:24:37 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.1.[0m
+[0m2021.09.01 13:24:39 INFO  time: initialize in 1.85s[0m
+[0m2021.09.01 13:24:44 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.01 13:24:44 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.09.02 09:04:50 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui' for client Visual Studio Code 1.59.1.[0m
+[0m2021.09.02 09:04:52 INFO  time: initialize in 1.52s[0m
+[0m2021.09.02 09:04:57 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.02 09:04:57 WARN  no build tool detected in workspace 'C:\Users\Allen\Desktop\Design\kladz-ui'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m

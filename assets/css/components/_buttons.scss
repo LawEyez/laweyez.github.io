@@ -1,0 +1,90 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  // writing-mode: sideways-lr;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 300;
+  letter-spacing: .5px;
+  font-size: 1.3rem;
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 15%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    transition: .3s;
+  }
+
+  &:hover::after {
+    background: $light;
+  }
+
+  &-dark-1 {
+    background: $dark-1;
+    color: $grey;
+  }
+
+  &-grey-dark {
+    background: $grey-dark;
+    color: $light;
+  }
+
+  &-light-outline {
+    background: transparent;
+    border: solid 1px rgba($light, .2);
+    color: $grey;
+    transition: .3s;
+
+    &:hover {
+      color: $light;
+      border-color: $light;
+    }
+  }
+
+  &-primary {
+    background: rgba($primary-color, .3);
+    color: $grey;
+    border: solid 1px $grey-dark;
+    transition: .3s;
+
+    &:hover {
+      color: $light;
+      border-color: $light;
+    }
+  }
+  
+  &-primary-outline {
+    background: transparent;
+    border: solid 1px rgba($primary-color, .2);
+    color: rgba($primary-color, .6);
+    transition: .3s;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// .btn-txt {
+//   display: inline-block;
+//   transform: rotate(-90deg);
+//   transform-origin: center;
+// }
+
+.btn-icon {
+  display: block;
+  margin-bottom: .5rem;
+  color: $primary-color;
+}

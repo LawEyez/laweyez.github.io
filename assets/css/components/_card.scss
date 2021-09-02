@@ -1,0 +1,417 @@
+.card {
+  position: relative;
+  height: 20rem;
+  // width: 20rem;
+  border: solid 1px rgba($dark-1, 1);
+  border-radius: 2rem;
+  transition: .3s;
+  cursor: pointer;
+  // background: $dark-3;
+  // overflow: hidden;
+  // box-shadow: 0 1px 1rem rgba(0, 0, 0, .2);
+
+  &:hover {
+    border-color: $light;
+    transform: translateY(-.5rem);
+  }
+}
+
+.card-img  {
+  position: absolute;
+  height: 65%;
+  width: 100%;
+  background: $dark-1;
+  border-radius: 2rem;
+  border-bottom-right-radius: 0;
+}
+
+.card-img img {
+  @include abs-center;
+  height: 80%;
+  width: auto;
+  object-fit: cover;
+}
+
+.card-data {
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  border-radius: 0;
+  // background: $dark-3;
+  // background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.card-title {
+  font-family: $base-font-alt;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: $primary-color;
+  font-size: 1.3rem;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 1.5rem;
+  }
+}
+
+.card-price {
+  font-family: $base-font-alt;
+  font-weight: 300;
+  color: $light;
+}
+
+.amnt {
+  font-size: 1.5rem;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 2rem;
+  }
+}
+
+.curr {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: rgba($primary-color, .3);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+
+  @media screen and (min-width: $mobile-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: $tablet-sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media screen and (min-width: $tablet-xlg) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media screen and (min-width: $laptop-sm) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  @media screen and (min-width: $laptop-lg) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media screen and (min-width: $mobile-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $tablet-xlg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: $laptop-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.category-card {
+  position: relative;
+  // border: solid 1px rgba($dark-1, 1);
+  height: 20rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    // border-color: rgba($light, 1);
+    // transform: translateY(-.5rem);
+
+    &::before {
+      background: $dark-1;
+      width: 20%;
+      // border-radius: 20rem;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    border: solid 1px rgba($dark-1, 1);
+    transition: .3s;
+  }
+}
+
+
+.category-card:hover {
+  .category-card-img {
+    filter: brightness(1);
+    // height: 50%;
+  }
+
+  .category-card-title {
+    opacity: 0;
+  }
+}
+
+.category-card-img {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  filter: brightness(0);
+  transition: .3s;
+
+  @media screen and (min-width: $tablet-sm) {
+    height: 80%;
+  }
+}
+
+.category-card-title {
+  position: absolute;
+  font-size: 3rem;
+  font-family: $base-font-alt;
+  text-transform: uppercase;
+  font-weight: 200;
+  opacity: 1;
+  transition: .3s;
+
+  
+}
+
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: $laptop-sm) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.featured-card {
+  position: relative;
+  height: 40rem;
+  width: 100%;
+  background: rgba($primary-color, 1);
+  // border-bottom-right-radius: 4rem;
+
+  @media screen and (min-width: $tablet-xlg) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: $laptop-sm) {
+    width: 75%;
+  }
+
+}
+
+.featured-card-body {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  z-index: 1;
+}
+
+.featured-card-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(0,0,0,.95), rgba(0,0,0,.7));
+  border-radius: 4rem 4rem 4rem 0;
+  padding: 1rem;
+  box-shadow: 0 1px 1rem rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet-sm) {
+    padding: 1.5rem;
+  }
+}
+
+.featured-card-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4rem 4rem 4rem 0;
+}
+
+.featured-card-num {
+  font-size: 4rem;
+  color: $primary-color;
+  font-weight: 800;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 5rem;
+  }
+  
+  @media screen and (min-width: $laptop-lg) {
+    font-size: 6rem;
+  }
+}
+
+.featured-card-tr {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (min-width: $tablet-sm) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+.featured-card-title {
+  font-size: 2rem;
+  font-family: $base-font-alt;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: max-content;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 2.5rem;
+  }
+  
+  @media screen and (min-width: $tablet-xlg) {
+    font-size: 3rem;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20%;
+    background: rgba($primary-color, .2);
+    margin-top: .8rem;
+  }
+}
+
+.featured-card-rating {
+  margin-top: .8rem;
+  font-size: 1.3rem;
+  color: yellow;
+
+  @media screen and (min-width: $tablet-sm) {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+}
+
+.featured-card-desc {
+  margin: 1rem 0 2rem 0;
+  font-size: 1rem;
+  color: $grey;
+  font-weight: 300;
+
+  @media screen and (min-width: $tablet-sm) {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+/****************************************** BX **************************************************/
+
+.bx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px rgba($light, .1);
+}
+
+.bx-txt {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: $base-font-alt;
+  font-size: 1.5rem;
+  color: $grey;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 1.7rem; 
+  }
+}
+
+.bx-icon {
+  font-size: 2.5rem;
+  color: $primary-color;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 3rem;
+  }
+}
+
+/******************************************** REVIEW CARD ************************************************/
+
+.review-card {
+  display: flex;
+  padding: 1rem;
+  background: $dark-1;
+  border-radius: 1rem;
+
+  @media screen and (min-width: $tablet-sm) {
+    padding: 2rem;
+  }
+}
+
+.review-card-rating {
+  display: flex;
+  flex-direction: column;
+  margin-inline-end: 1rem;
+  color: yellow;
+}
+
+.review-card-title {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 1.4rem;
+  }
+}
+
+.review-card-subtitle {
+  font-family: $base-font-alt;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 1.2rem;
+  }
+}
+
+.review-card-body {
+  margin-block-start: 1rem;
+  color: $grey;
+
+  @media screen and (min-width: $tablet-sm) {
+    font-size: 1.2rem;
+  }
+}
